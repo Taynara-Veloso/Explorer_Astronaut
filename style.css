@@ -147,3 +147,11 @@ main .card p{
   border: none;
   font-size: 0.875rem;
 }
+
+footer{
+  background: var(--blue-800);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
