@@ -28,7 +28,7 @@ body, input, button, textarea{
 .container header .astronaut{
   width: 22.75rem;
   height: 23.125rem;
-  padding-bottom: 1.7rem;
+  margin-bottom: 1.7rem;
 }
 
 .container header strong{
@@ -41,10 +41,49 @@ body, input, button, textarea{
   color: var(--blue-800);
   font-size: 1.25rem;
   font-weight: 600;
-  padding-bottom: 2.188rem;
+  margin-bottom: 2.188rem;
 }
 
 .container header .arrow{
-  padding-bottom: 5.813rem;
+  margin-bottom: 5.813rem;
+}
+
+main {
+  background-color: var(--blue-800);
+  padding-top: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .card{
+  background: var(--white);
+  width: 22rem;
+  height: 100%;
+  border-radius: 16px;
+  padding: 1.625rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.125rem;
+}
+
+main .card .planet{
+  width: 5rem;
+  height: 5rem;
+  object-fit:fill;
+  margin-bottom: 2.069rem;
+}
+
+main .card strong{
+  font-size: 1.826rem;
+  color: var(--pink-700);
+  font-weight: 900;
+  margin-bottom: 1.241rem;
+}
+
+main .card p{
+  font-size: 1rem;
+  color: var(--blue-800);
+  font-weight: 400;
 }
 
