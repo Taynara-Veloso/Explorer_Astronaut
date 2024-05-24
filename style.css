@@ -70,7 +70,6 @@ main .card{
 main .card .planet{
   width: 5rem;
   height: 5rem;
-  object-fit:fill;
   margin-bottom: 2.069rem;
 }
 
@@ -87,3 +86,64 @@ main .card p{
   font-weight: 400;
 }
 
+.input-wrapper{
+  background: var(--gray-100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-wrapper form{
+  width: 26.875rem;
+  height: 100%;
+  padding: 4.438rem 2.438rem;
+}
+
+.input-wrapper form .wrapper{
+  margin-top: 2.688rem;
+}
+
+.input-wrapper form strong{
+  color: var(--pink-700);
+  font-size: 2rem;
+  font-weight: 900;        
+}
+
+.input-wrapper form .wrapper .icon{
+  position: absolute;
+  z-index: 2;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.75rem 0.25rem 0.75rem 0.875rem;
+}
+
+.input-wrapper form .wrapper label{
+  position: absolute;
+  z-index: -1;
+}
+
+.input-wrapper form .wrapper input, textarea{
+  width: 21.75rem;
+  color: var(--blue-800);
+  border: 0.094rem solid var(--blue-800);
+  border-radius: 16px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.input-wrapper form .wrapper input{
+  padding-left: 3.125rem;
+}
+
+.input-wrapper form button{
+  display: block;
+  width: 9.500rem;
+  background: var(--blue-800);
+  color: var(--white);
+  padding: 0.656rem 1rem;
+  border-radius: 16px;
+  border: none;
+  font-size: 0.875rem;
+}
