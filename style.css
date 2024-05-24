@@ -33,10 +33,18 @@ body, input, button, textarea{
 
 .container header strong{
   color: var(--pink-700);
-  
+  font-size: 2rem;
+  font-weight: 900;
 }
 
 .container header p{
   color: var(--blue-800);
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-bottom: 2.188rem;
+}
+
+.container header .arrow{
+  padding-bottom: 5.813rem;
 }
 
