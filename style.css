@@ -70,6 +70,9 @@ main .card{
   display: flex;
   flex-direction: column;
   margin-bottom: 3.125rem;
+
+  animation-name: animation-leftCenter-rightCenter;
+  animation-duration: 1s;
 }
 
 main .card .planet{
@@ -170,5 +173,11 @@ footer span{
 @keyframes animation-start {
   from {
       transform: translateY(var(--startY));
+  }
+}
+
+@keyframes animation-leftCenter-rightCenter {
+  from {
+      transform: translateX(var(--centerX));
   }
 }
