@@ -29,6 +29,11 @@ body, input, button, textarea{
   width: 22.75rem;
   height: 23.125rem;
   margin-bottom: 1.7rem;
+
+  --startY: -100%;
+  animation-name: animation-start;
+  animation-duration: 1s;
+  
 }
 
 .container header strong{
@@ -154,4 +159,16 @@ footer{
   display: flex;
   justify-content: center;
   padding: 2rem;
+}
+
+footer span{
+  --startY: 100%;
+  animation-name: animation-start;
+  animation-duration: 1s;
+}
+
+@keyframes animation-start {
+  from {
+      transform: translateY(var(--startY));
+  }
 }
