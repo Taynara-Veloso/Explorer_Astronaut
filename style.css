@@ -170,6 +170,11 @@ footer span{
   animation-duration: 1s;
 }
 
+.input-wrapper .img_input{
+    opacity: 0;
+    max-height: 0;
+}
+
 @keyframes animation-start {
   from {
       transform: translateY(var(--startY));
@@ -179,5 +184,75 @@ footer span{
 @keyframes animation-leftCenter-rightCenter {
   from {
       transform: translateX(var(--centerX));
+  }
+}
+
+@media (min-width: 40em) {
+  .container header{
+    flex-direction: row-reverse;
+    justify-content: space-around;
+  }
+
+  .container header .wrapper-title {
+    margin-top: 10rem;
+  }
+
+  .container header .astronaut{
+    width: 44rem;
+    height: 45rem;
+  }
+
+  .container header strong{
+    font-size: 3.643rem;
+  }
+
+  .container header p{
+    font-size: 2rem;
+  }
+
+  .container header .arrow{
+    width: 3.662rem;
+    height: 6.563rem;
+    margin-top: 11rem;
+  }
+
+  main{
+    flex-direction: row;
+    padding-top: 4rem;
+    justify-content: space-evenly;
+  }  
+
+  main .card{
+    width: 22.875rem;
+    height: 28rem;
+    display: flex;
+  }
+
+  main .card strong{
+    font-size: 2.206rem;
+  }
+
+  main .card p{
+    font-size: 1.211rem;
+  }
+
+  .input-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .input-wrapper form {
+    width: 37.188rem;
+    padding-left: 5rem;
+  }
+
+  .input-wrapper form .wrapper input, textarea{
+    width: 37rem;
+  }
+
+  .input-wrapper .img_input{
+    opacity: 1;
+    max-height: none;
   }
 }
